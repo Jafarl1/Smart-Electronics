@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Smart аккакнт</title>
+</head>
+<body>
+
+        <div class="header">
+            <div class="topbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="icons/logo.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="info">
+                    <span>
+                        +7 (812) 660-50-54
+                    </span>
+                    <span>
+                        +7 (958) 111-95-03
+                    </span>
+                    <span>
+                        Пн-вс: с 10:00 до 21:00
+                    </span>
+                    <img src="icons/search.svg" alt="search-button" class="search-button" id="search-btn-acc">
+                    <img src="icons/eye/eye=empty.svg" alt="eye">
+                    <img src="icons/like/like=like.svg" alt="like">
+                    <img src="icons/compare/compare=compare.svg" alt="compare">
+                    <a href="cart.html" target="_blank">
+                        <img src="icons/cart/cart=empty.svg" alt="cart">
+                    </a>
+                                        
+                </div>
+
+                <div class="account">
+                    <img src="icons/sign in.svg" alt="profile" id="account">
+                </div>
+
+                <div class="menu" id="menu">
+                    <a href="#"> Общие сведения </a>
+                    <a href="#"> Личные данные </a>
+                    <a href="#"> История покупок </a>
+                    <a href="#"> Избранное </a>
+                    <a href="#"> Сменить пароль </a>
+                    <a href="index.html"> Выйти </a>
+                </div>
+
+                <div class="search-page" id="searchpage-acc">
+                    <div class="search-div">
+                        <label for="search"></label>
+                        <input type="text" class="search-inp" id="search" placeholder="Введите запрос, например «Smart balance»">
+                        <i class="fa-solid fa-xmark" id="closesearch-acc"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="header-2">
+            <div class="topbar-2">
+                <button class="catalog">
+                    <img src="icons/menu icons/menu-icon.svg" alt="menu-icon">
+                    <span>Каталог товаров</span>
+                </button>
+                <div class="menu-2">
+                    <a href="#"> О компании </a>
+                    <a href="#"> Акции </a>
+                    <a href="#"> Рассрочка 0|0|18 </a>
+                    <a href="#"> Сервис и гарантия </a>
+                    <a href="#"> Опт/дропшиппинг </a>
+                    <a href="#"> Контакты </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-sector">
+            <div class="main-center">
+                <div class="catalog-body">
+                    <a href="#" class="block">
+                        <img src="icons/menu icons/menu icons=гироскутер.svg" alt="">
+                        <span>
+                             Гироскутеры
+                        </span>
+                     </a>
+                    <a href="#" class="block">
+                         <img src="icons/menu icons/menu icons=электросамокаты.svg" alt="">
+                         <span>
+                             Электросамокаты 
+                         </span>
+                     </a>
+                     <a href="#" class="block">
+                         <img src="icons/menu icons/menu icons=моноколеса.svg" alt="">
+                         <span>
+                             Моноколеса
+                         </span>
+                     </a>
+                     <a href="#" class="block">
+                         <img src="icons/menu icons/menu icons=сигвеи и мини-сигвеи.svg" alt="">
+                         <span>
+                             Сигвеи и мини-сигвеи
+                         </span>
+                     </a>
+                     <a href="#" class="block">
+                         <img src="icons/menu icons/menu icons=электроскутеры.svg" alt="">
+                         <span>
+                             Электроскутеры
+                         </span>
+                     </a>
+                     <a href="#" class="block">
+                         <img src="icons/menu icons/menu icons=электровелосипед.svg" alt="">
+                         <span>
+                             Электровелосипеды
+                         </span>
+                     </a>
+                     <a href="#" class="block">
+                         <img src="icons/menu icons/menu icons=electric skate.svg" alt="">
+                         <span>
+                             Электроскейты
+                         </span>
+                     </a>
+                     <a href="#" class="block">
+                         <img src="icons/menu icons/menu icons=электромобили.svg" alt="">
+                         <span>
+                             Электромобили
+                         </span>
+                     </a>
+                     <a href="#" class="block">
+                         <img src="icons/menu icons/menu icons=аксессуары.svg" alt="">
+                         <span>
+                             Аксессуары
+                         </span>
+                     </a>
+                     <a href="#" class="block">
+                         <img src="icons/menu icons/menu icons=умные игрушки.svg" alt="">
+                         <span>
+                             Умные игрушки
+                         </span>
+                     </a>
+                     <a href="#" class="block">
+                         <img src="icons/menu icons/menu icons=smart watch.svg" alt="">
+                         <span>
+                             Smart Watch
+                         </span>
+                     </a>                    
+                 </div>
+                 <div class="main-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/slider.png" alt="slider" class="slider1"></div>
+                            <div class="swiper-slide"><img src="images/slider.png" alt="slider" class="slider2"></div>
+                            <div class="swiper-slide"><img src="images/slider.png" alt="slider" class="slider3"></div>
+                            <div class="swiper-slide"><img src="images/slider.png" alt="slider" class="slider4"></div>
+                            <div class="swiper-slide"><img src="images/slider.png" alt="slider" class="slider5"></div>
+                        </div>
+                        <div class="swiper-pagination">
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="out-block">
+            <div class="hits in-block">
+                <div class="block-heading">
+                    <span>
+                        Хиты продаж
+                    </span>
+                    <a href="#">
+                        Все товары 
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
+                <div class="block-body hits-block-body">
+                    
+                </div>               
+            </div>
+        </div>
+
+       <div class="out-block">
+            <div class="news in-block">
+                <div class="block-heading">
+                    <span>
+                        Новинки
+                    </span>
+                    <a href="#">
+                        Все товары 
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
+                <div class="block-body news-block-body">
+                    
+                </div>
+                <div class="others">
+                    <div class="other-1">
+                        <p>
+                            Скидки до 30% <br> на сигвеи
+                        </p>
+                        <img src="images/scooter.png" alt="">
+                    </div>
+                    <div class="other-2">
+                        <p>
+                            Неделя <br> смарт часов
+                        </p>
+                        <img src="images/watch.png" alt="">
+                    </div>
+                </div>               
+            </div>
+        </div>
+
+        <div class="out-block">
+            <div class="segways in-block">
+                <div class="block-heading">
+                    <span>
+                        Сигвеи
+                    </span>
+                    <a href="#">
+                        Все товары 
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
+                <div class="block-body segways-block-body">
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="out-block">
+            <div class="monowheels in-block">
+                <div class="block-heading">
+                    <span>
+                        Моноколёса
+                    </span>
+                    <a href="#">
+                        Все товары 
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
+                <div class="block-body monowheels-block-body">
+                   
+                </div>
+                <div class="others">
+                    <div class="other-1">
+                        <p>
+                            Распродажа <br> до — 50%
+                        </p>
+                        <img src="images/percent.png" alt="">
+                    </div>
+                    <div class="other-2">
+                        <p>
+                            Smart Balance Premium по специальной цене
+                        </p>
+                        <img src="images/segway.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="out-block">
+            <div class="cycles in-block">
+                <div class="block-heading">
+                    <span>
+                        Электровелосипеды
+                    </span>
+                    <a href="#">
+                        Все товары 
+                        <i class="fa-solid fa-caret-right arrow"></i>
+                    </a>
+                </div>
+                <div class="block-body cycles-block-body">
+                  
+                </div>
+            </div>
+        </div>
+
+        <div class="out-block" style="margin-bottom: 80px;">
+            <div class="newspaper in-block">
+                <div class="block-heading">
+                    <span>
+                        Новости
+                    </span>
+                    <a href="#">
+                        Читать всё 
+                        <i class="fa-solid fa-caret-right arrow"></i>
+                    </a>
+                </div>
+                <div class="newspaper-body">
+                    <div class="newspaper-1">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="foot">
+                            <a href="#">
+                                <span>
+                                    Подробнее
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </span>                              
+                            </a>
+                            <span>
+                                05 июня 2021
+                            </span>
+                        </div>
+                    </div>
+                    <div class="newspaper-2">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, <br> социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="foot">
+                            <a href="#">
+                                <span>
+                                    Подробнее
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </span>
+                            </a>
+                            <span>
+                                05 июня 2021
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer out-block" style="margin-bottom: 0px; background-color: #EDF2F6;">
+            <div class="in-block" style="background-color: #EDF2F6;">
+                <div class="all-info">
+                    <div class="section sect-1">
+                        <ul>
+                            <li>
+                                <img src="icons/logo.svg" alt="logo">
+                            </li>
+                            <li>
+                                +7 (958) 111-95-03
+                            </li>
+                            <li>
+                                +7 (812) 660-50-54
+                            </li>
+                            <li>
+                                Пн-вс: с 10:00 до 21:00
+                            </li>
+                            <li>
+                                Проспект Стачек 67 к.5 <br>
+                                Лиговский проспект 205 <br>
+                                Гражданский проспект, 116 к.5
+                            </li>
+                        </ul>  
+                    </div>
+                    <div class="section sect-2">
+                        <ul>
+                            <li>
+                                Для клиента
+                            </li>
+                            <li>
+                                <a href="#"> Как купить </a> 
+                            </li>
+                            <li>
+                                <a href="#"> Доставка и оплата </a>
+                            </li>
+                            <li>
+                                <a href="#"> Кредит </a>
+                            </li>
+                            <li>
+                                <a href="#"> Политика конфиденциальности </a>
+                            </li>
+                            <li>
+                                <a href="#"> Вопросы и ответы (F.A.Q.) </a>
+                            </li>
+                            <li>
+                                <a href="#"> Сервис и гарантия </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section sect-3">
+                        <ul>
+                            <li>
+                                О магазине
+                            </li>
+                            <li>
+                                <a href="#"> Отзывы </a> 
+                            </li>
+                            <li>
+                                <a href="#"> Наши преимущества </a>
+                            </li>
+                            <li>
+                                <a href="#"> История компании </a>
+                            </li>
+                            <li>
+                                <a href="#"> Сотрудничество </a>
+                            </li>
+                            <li>
+                                <a href="#"> Партнёрская программа </a>
+                            </li>
+                            <li>
+                                <a href="#"> Вакансии </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section sect-4">
+                        <ul>
+                            <li>
+                                Сотрудничество
+                            </li>
+                            <li>
+                                <a href="#"> Оптом </a> 
+                            </li>
+                            <li>
+                                <a href="#"> Дропшиппинг </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-bar">
+                    <span>
+                        SmartТехника © 2021 Все права защищены
+                    </span>
+                    <div class="socials">
+                        <a href="#"> <img src="icons/socials/twitter.svg" alt=""> </a> 
+                        <a href="#"> <img src="icons/socials/facebook.svg" alt=""> </a> 
+                        <a href="#"> <img src="icons/socials/vk.svg" alt=""> </a> 
+                        <a href="#"> <img src="icons/socials/instagram.svg" alt=""> </a>
+                    </div>
+                    <span style="font-size: 12px;">
+                        Разработка: websl.ru
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="account.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Корзина-1</title>
+</head>
+<body>
+    
+    <div class="header-back">
+        <div class="header">
+            <div class="topbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="icons/logo.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="info">
+                    <span class="hide-resp-768">
+                        +7 (812) 660-50-54
+                    </span>
+                    <span class="hide-resp-768">
+                        +7 (958) 111-95-03
+                    </span>
+                    <span class="hide-resp-768">
+                        Пн-вс: с 10:00 до 21:00
+                    </span>
+                    <img src="icons/search.svg" alt="search-button" class="search-button hide-resp-768" id="search-btn">
+                    <img src="icons/eye/eye=empty.svg" alt="eye" class="hide-resp-320">
+                    <img src="icons/like/like=like.svg" alt="like" class="hide-resp-320">
+                    <img src="icons/compare/compare=compare.svg" alt="compare" class="hide-resp-320">
+                    <a href="cart.html">
+                        <img src="icons/cart/cart=empty.svg" alt="cart" class="cart-btn hide-resp-768"> 
+                    </a> 
+                                   
+                </div>
+
+                <button class="sign" id="sign">
+                    Войти
+                </button>
+
+                <div class="search-page" id="searchpage">
+                    <div class="search-div">
+                        <label for="search"></label>
+                        <input type="text" class="search-inp" id="search" placeholder="Введите запрос, например «Smart balance»">
+                        <i class="fa-solid fa-xmark" id="closesearch"></i>
+                    </div>
+                </div>               
+            </div>
+
+            <div class="popUp">
+                <div class="sign-block">
+                    <div class="vxod">
+                        <span>
+                            Вход
+                        </span>
+                        <i class="fa-solid fa-xmark" id="close-sign"></i>
+                    </div>
+                    <label for="login">Эл. почта или телефон</label>
+                    <input type="text" id="login" class="loginput">
+                    
+                    <div class="password-div">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" class="loginput bg-img" placeholder="">
+                        <a href="#" class="vsblty"></a>
+                        <a href="#" class="forget"> 
+                            Забыли пароль?
+                        </a>                            
+                    </div>
+                    <div class="rem-div">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember" class="rem-label"> Запомнить меня </label>
+                    </div>
+                    <button class="enter">
+                        Войти
+                    </button>
+                    <div class="register">
+                        <a href="#" id="letregister">
+                            Зарегистрироваться
+                        </a>                            
+                    </div>
+                </div>
+            </div>
+
+            <div class="reg-popUp">
+                <div class="sign-block" style="height: 606px;">
+                    <div class="vxod">
+                        <span>
+                            Регистрация
+                        </span>
+                        <i class="fa-solid fa-xmark" id="reg-close-sign"></i>
+                    </div>
+                    <label for="name"> Имя </label>
+                    <input type="text" id="name" class="loginput">
+                    <label for="reg-login"> Эл. почта </label>
+                    <input type="email" id="reg-login" class="loginput">
+                    <label for="phone"> Номер телефона </label>
+                    <input type="tel" id="phone" class="loginput">
+                    <div class="reg-password-div">
+                        <label for="id-password">Пароль</label>
+                        <input type="password" id="reg-password" class="loginput bg-img" placeholder="" style="margin-bottom: 10px;">
+                        <a href="#" class="reg-vsblty"></a>                           
+                    </div>
+                    <p>
+                        Регистрируясь, вы соглашаетесь <br> 
+                        <a href=""> с пользовательским соглашением </a> 
+                    </p>
+                    <button class="enter" style="margin-top: 10px;">
+                        Зарегистрироваться
+                    </button>
+                    <div class="register">
+                        <a href="#" id="registered">
+                            Я уже зарегистрирован
+                        </a>                            
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="out-block">
+        <div class="cart-1-page">
+            <h1>
+                Оформление заказа
+            </h1>
+
+            <div class="order">
+                <div class="order-info">
+                    <div class="your-order">
+                        <h2>
+                            Ваш заказ
+                        </h2>
+                        <div class="y-order-body">
+                            <!-- <div class="prodincart">
+
+                                <div class="prod-info">
+                                    <img src="images/image 18.png" alt="">
+                                    <div class="prod-name">
+                                        Гироскутер Smart Balance Well 6.5 Хип-Хоп (АКВАЗАЩИТА)
+                                    </div>
+                                </div>
+
+                                <div class="prod-count">
+                                    <button class="minus"> <i class="fa-solid fa-minus" style="color: #C8CACB;"></i> </button>
+                                    <div class="real-count"> 1 </div>
+                                    <button class="plus"> <i class="fa-solid fa-plus"></i> </button>
+                                </div>
+
+                                <div class="price">
+                                    <div class="exprice">
+                                        4890 ₽
+                                    </div>
+                                    <div class="real-price">
+                                        4890 ₽
+                                    </div>
+                                </div>
+
+                                <div class="delete" style="cursor: pointer;">
+                                    <img src="icons/trash.svg" alt="">
+                                </div>
+
+                            </div> -->
+                            
+                        </div>
+                    </div>
+                    <button type="submit" class="go-next">
+                        Далее
+                    </button>
+                    <input type="text" class="order-input input1" id="receive" placeholder="Способ получения">
+                    <input type="text" class="order-input input2" id="pay" placeholder="Способ оплаты">
+                    <input type="text" class="order-input input3" id="receiver" placeholder="Получатель">
+                </div>
+
+
+                <div class="result">
+                    <h2 style="margin-bottom: 17px;">
+                        Итого
+                    </h2>
+                    <div class="tovar-summa" style="margin-bottom: 20px;">
+                        <span class="gray">
+                            <span class="count" id="resultcount"> 
+                                
+                            </span> 
+                            <span>
+                                 на сумму
+                            </span>
+                            
+                        </span>
+                        <span class="totalprice">
+                            
+                        </span>
+                    </div>
+                    <div class="delivery" style="margin-bottom: 30px;">
+                        <span class="gray">
+                            Стоимость доставки
+                        </span>
+                        <span>
+                            бесплатно
+                        </span>
+                    </div>
+                    <div class="line" style="margin-bottom: 30px;"> </div>
+                    <div class="k-oplate">
+                        <span>
+                            К оплате
+                        </span>
+                        <span class="totalprice" style="font-size: 36px; font-weight: 700;">
+                            
+                        </span>
+                    </div>
+                    <button class="ordering">
+                        Оформить заказ
+                    </button>
+                    <div class="confirm">
+                        <input type="checkbox" name="confirm-order" id="confirm-order">
+                        <p>
+                            Подтверждая заказ, я принимаю условия <br>
+                            <a href="">пользовательского соглашения</a> 
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+let d = document
+
+// <==== Header after scroll ====> 
+
+let header = d.querySelector(".header")
+
+document.addEventListener("scroll", () => {
+    let fromTop = window.scrollY
+    
+    if (fromTop > 150){
+        header.classList.add("fixed-top")
+        header.classList.remove("hidden")
+    }
+    else if (fromTop < 150 && fromTop > 80) {
+        header.classList.remove("fixed-top")
+        header.classList.add("hidden")
+    }
+    else{
+        header.classList.remove("hidden")
+        header.classList.remove("fixed-top")
+    }
+})
+
+
+// <==== Seach ====>
+
+let searchBtn = d.getElementById("search-btn")
+let searchPage = d.getElementById("searchpage")
+let closeSearchBtn = d.getElementById("closesearch")
+
+searchBtn.addEventListener("click", () => {
+    searchPage.classList.add("show-search-page")
+})
+closeSearchBtn.addEventListener("click", () => {
+    searchPage.classList.remove("show-search-page")
+})
+
+
+// <==== Sign and Register ====>
+
+let signBtn = d.getElementById("sign")
+let closeSign = d.getElementById("close-sign")
+let popUp = d.querySelector(".popUp")
+
+signBtn.addEventListener("click", () => {
+    popUp.classList.add("show-popup")
+})
+closeSign.addEventListener("click", () => {
+    popUp.classList.remove("show-popup")
+})
+
+let regPopUp = d.querySelector(".reg-popUp") 
+let closeReg = d.getElementById("reg-close-sign")
+let letRegister = d.getElementById("letregister")
+let registered = d.getElementById("registered")
+
+letRegister.addEventListener("click", () => {
+    regPopUp.classList.add("show-popup")
+    popUp.classList.remove("show-popup")
+})
+closeReg.addEventListener("click", () => {
+    regPopUp.classList.remove("show-popup")
+})
+registered.addEventListener("click", () => {
+    regPopUp.classList.remove("show-popup")
+    popUp.classList.add("show-popup")
+})
+
+
+// <==== Passdowrd visibility ====>
+
+let vsblty = d.querySelector(".vsblty")
+let passInput = d.getElementById("password")
+
+let vsbltyReg = d.querySelector(".reg-vsblty")
+let passInputReg = d.getElementById("reg-password")
+
+vsblty.addEventListener("click", () => {
+    if (passInput.getAttribute("type") == "password"){
+        passInput.setAttribute("type", "text")
+        vsblty.classList.add("off")
+    }
+    else {
+        passInput.setAttribute("type", "password")
+        vsblty.classList.remove("off")
+    }
+    lockBg()
+})
+const lockBg = () => {
+    if (passInput.value !== ""){
+        passInput.classList.remove("bg-img")
+    }
+    else{   
+        passInput.classList.add("bg-img")
+    }
+}
+vsbltyReg.addEventListener("click", () => {
+    if (passInputReg.getAttribute("type") == "password"){
+        passInputReg.setAttribute("type", "text")
+        vsbltyReg.classList.add("off")
+    }
+    else {
+        passInputReg.setAttribute("type", "password")
+        vsbltyReg.classList.remove("off")
+    }
+    lockBg()
+})
+const lockBgReg = () => {
+    if (passInputReg.value !== ""){
+        passInputReg.classList.remove("bg-img")
+    }
+    else{   
+        passInputReg.classList.add("bg-img")
+    }
+}
+window.addEventListener("click", () => {
+    lockBg()
+    lockBgReg()
+})
+   
+// ============================================================
+
+    let orderList = d.querySelector(".y-order-body")
+    let count = d.querySelector("#resultcount")
+    let totalPrice = d.querySelectorAll(".totalprice")
+    let prodsInCart = []
+
+        
+
+        listCartItems = () => {
+            orderList.innerHTML = "";
+            prodsInCart.forEach( e => {
+                orderList.innerHTML += `
+                    <div class="prodincart">
+                        <div class="prod-info">
+                            <img src="${e.image}" alt="">
+                            <div class="prod-name">
+                                ${e.name} D${e.id}
+                            </div>
+                        </div>
+                        <div class="prod-count">
+                            <button class="minus" onclick="decreaseCount(${e.id})"> <i class="fa-solid fa-minus" style="color: #C8CACB;"></i> </button>
+                            <div class="real-count"> ${e.count} </div>
+                            <button class="plus" onclick="increaseCount(${e.id})"> <i class="fa-solid fa-plus"></i> </button>
+                        </div>
+                        <div class="price">
+                            <div class="exprice">
+                                ${e.exprice}
+                            </div>
+                            <div class="real-price">
+                                ${e.price} ₽
+                            </div>
+                        </div>
+                        <div class="delete" style="cursor: pointer;">
+                            <img src="icons/trash.svg" alt="" onclick="trashProd(${e.id})">
+                        </div>
+                    </div>
+                `
+            })
+
+            let sum = 0;
+            prodsInCart.forEach(a => {
+                sum += a.count 
+            })
+            count.innerHTML = sum == 1 ? `${sum} товар` : `${sum} товара` 
+
+
+            let total = 0
+            prodsInCart.forEach(a => {
+                total += a.count*a.price
+            })
+
+            totalPrice.forEach(e=>{
+                e.innerHTML = `${total} ₽`
+            })
+        }
+
+        const fromLocal = () => {
+            let prods = JSON.parse(localStorage.getItem("cartLocal"))
+
+            prods.forEach(e=>{
+                prodsInCart.push(e)
+            })
+            listCartItems()
+        }
+        
+        fromLocal()
+
+        listCartItems()
+
+      
+
+        let ordering = d.querySelector(".ordering")
+            ordering.addEventListener("click", () => {
+            alert("Пожалуста введите все необходимые данные и нажмите кнопку Далее.")
+        })
+
+        let theNext = d.querySelector(".go-next")
+        let inputs = d.querySelectorAll(".order-input")
+        let input1 = d.querySelector(".input1")
+        let input2 = d.querySelector(".input2")
+        let input3 = d.querySelector(".input3")
+        let receive = d.getElementById("receive")
+        let pay = d.getElementById("pay")
+        let receiver = d.getElementById("receiver")
+        
+        // const cb = d.getElementById("confirm-order")       
+        // console.log(cb.checked);
+
+
+        const increaseCount = (id) => {
+            let prod = prodsInCart.find((a)=>a.id === id)
+            
+            if (prod.count < prod.stock){
+                prod.count++;
+            }
+            else{
+                alert("Данной модели больше не осталось")
+            }
+            listCartItems()
+        }
+
+        const decreaseCount = (id) => {
+            let prod = prodsInCart.find((a)=>a.id === id)
+            
+            if (prod.count > 1){
+                prod.count--;
+            }
+            else{
+                trashProd(id)
+            }
+            listCartItems()
+        }
+
+        const trashProd = (id) => {
+            let prod = prodsInCart.find((a)=>a.id === id)
+            prodsInCart = prodsInCart.filter(a => a !== prod)
+            console.log(prodsInCart);
+            localStorage.setItem("cartLocal", JSON.stringify(prodsInCart))
+            listCartItems()
+        }
+
+
+        theNext.addEventListener("click", () => {
+                if (input1.value == 0){
+                    input1.classList.add("empty-box")
+                }
+                if (input2.value == 0){
+                    input2.classList.add("empty-box")
+                }
+                if (input3.value == 0){
+                    input3.classList.add("empty-box")
+                }
+                else {
+                    window.open("cart-2.html", "_blank");
+                }
+        })
+
+        inputs.forEach( a => {
+            a.addEventListener("click", () => {
+                a.classList.remove("empty-box")
+            })
+        })
+    
+
+        
+
+    </script>  
+
+</body>
+</html>
+
+
+<!-- moreInfo.forEach( a => {
+    if (a.value == 0){
+        a.classList.add("empty-box")
+        
+    }
+    else if (){
+        location.href="cart-2.html"
+    }
+}) -->
+
+
+

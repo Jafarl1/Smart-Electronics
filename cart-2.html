@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Корзина-2</title>
+</head>
+<body>
+
+    <div class="header-back">
+        <div class="header">
+            <div class="topbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="icons/logo.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="info">
+                    <span class="hide-resp-768">
+                        +7 (812) 660-50-54
+                    </span>
+                    <span class="hide-resp-768">
+                        +7 (958) 111-95-03
+                    </span>
+                    <span class="hide-resp-768">
+                        Пн-вс: с 10:00 до 21:00
+                    </span>
+                    <img src="icons/search.svg" alt="search-button" class="search-button hide-resp-768" id="search-btn">
+                    <img src="icons/eye/eye=empty.svg" alt="eye" class="hide-resp-320">
+                    <img src="icons/like/like=like.svg" alt="like" class="hide-resp-320">
+                    <img src="icons/compare/compare=compare.svg" alt="compare" class="hide-resp-320">
+                    <a href="cart.html" target="_blank">
+                        <img src="icons/cart/cart=empty.svg" alt="cart" class="cart-btn hide-resp-768"> 
+                    </a> 
+                                   
+                </div>
+
+                <button class="sign" id="sign">
+                    Войти
+                </button>
+
+                <div class="search-page" id="searchpage">
+                    <div class="search-div">
+                        <label for="search"></label>
+                        <input type="text" class="search-inp" id="search" placeholder="Введите запрос, например «Smart balance»">
+                        <i class="fa-solid fa-xmark" id="closesearch"></i>
+                    </div>
+                </div>               
+            </div>
+
+            <div class="popUp">
+                <div class="sign-block">
+                    <div class="vxod">
+                        <span>
+                            Вход
+                        </span>
+                        <i class="fa-solid fa-xmark" id="close-sign"></i>
+                    </div>
+                    <label for="login">Эл. почта или телефон</label>
+                    <input type="text" id="login" class="loginput">
+                    
+                    <div class="password-div">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" class="loginput bg-img" placeholder="">
+                        <a href="#" class="vsblty"></a>
+                        <a href="#" class="forget"> 
+                            Забыли пароль?
+                        </a>                            
+                    </div>
+                    <div class="rem-div">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember" class="rem-label"> Запомнить меня </label>
+                    </div>
+                    <button class="enter">
+                        Войти
+                    </button>
+                    <div class="register">
+                        <a href="#" id="letregister">
+                            Зарегистрироваться
+                        </a>                            
+                    </div>
+                </div>
+            </div>
+
+            <div class="reg-popUp">
+                <div class="sign-block" style="height: 606px;">
+                    <div class="vxod">
+                        <span>
+                            Регистрация
+                        </span>
+                        <i class="fa-solid fa-xmark" id="reg-close-sign"></i>
+                    </div>
+                    <label for="name"> Имя </label>
+                    <input type="text" id="name" class="loginput">
+                    <label for="reg-login"> Эл. почта </label>
+                    <input type="email" id="reg-login" class="loginput">
+                    <label for="phone"> Номер телефона </label>
+                    <input type="tel" id="phone" class="loginput">
+                    <div class="reg-password-div">
+                        <label for="id-password">Пароль</label>
+                        <input type="password" id="reg-password" class="loginput bg-img" placeholder="" style="margin-bottom: 10px;">
+                        <a href="#" class="reg-vsblty"></a>                           
+                    </div>
+                    <p>
+                        Регистрируясь, вы соглашаетесь <br> 
+                        <a href=""> с пользовательским соглашением </a> 
+                    </p>
+                    <button class="enter" style="margin-top: 10px;">
+                        Зарегистрироваться
+                    </button>
+                    <div class="register">
+                        <a href="#" id="registered">
+                            Я уже зарегистрирован
+                        </a>                            
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+    <div class="out-block">
+        <div class="cart-1-page">
+            <h1>
+                Оформление заказа
+            </h1>
+
+            <div class="order">
+                <div class="order-info">
+                    <div class="your-order">
+                        <h2>
+                            Ваш заказ
+                        </h2>
+                        <div class="main-div">
+                            <div class="y-order-body-2">
+                                <!-- <div class="ordered-prod">
+                                    <img src="" alt="">
+                                    <div class="other-info">
+    
+                                    </div>
+                                </div> -->
+                            </div>
+                            <a href="cart.html" class="change-order">
+                                Изменить
+                            </a>
+                        </div>
+                    </div>
+                    <div class="receive-way">
+                        <h2 style="margin-bottom: 20px;">
+                            Способ получения
+                        </h2>
+                        <div class="up-div">
+                            <div class="city-side">
+                                <label for="city" class="your-city"> Ваш город </label>
+                                <input list="cities" value="" type="text" id="city" style="margin-top: 8px;">
+                                    <datalist id="cities">
+                                        <option> Baku
+                                        <option> Sumqayit
+                                        <option> Ganja
+                                        <option> Quba
+                                        <option> Astara
+                                    </datalist>
+                            </div>
+                            <div class="delivery-side">
+                                <div class="delivery-div" style="margin-top: 28px;">
+                                    <input type="radio" name="del-or-safe" id="delivery">  
+                                    <label for="delivery"> Доставка </label>
+                                </div>
+                                <div class="self-div">
+                                    <input type="radio" name="del-or-safe" id="self">  
+                                    <label for="self"> Самовывоз </label>
+                                </div>
+                                
+                            </div>
+                        </div>  
+
+                        <div class="down-div">
+                            <div class="date-time">
+                                <label for="date" class="date"> Дата </label>
+                                <input list="dates" value="" type="text" id="date" style="margin-top: 8px;">
+                                    <datalist id="dates">
+                                        <option> Завтра, 11 июля, вс
+                                        <option> Послезавтра, 12 июля, пн
+                                        <option> 13 июля, вт
+                                        <option> 14 июля, ср
+                                        <option> 15 июля, чт
+                                        <option> 16 июля, пт
+                                        <option> 17 июля, сб
+                                    </datalist>
+
+                                <label for="time" class="time"> Время </label>
+                                <input list="times" value="" type="text" id="time" style="margin-top: 8px;">
+                                    <datalist id="times">
+                                        <option> 09:00-12:00 (бесплатно)
+                                        <option> 12:00-15:00 (бесплатно)
+                                        <option> 15:00–18:00 (бесплатно)
+                                        <option> 18:00–21:00 (бесплатно) 
+                                        <option> 21:00–24:00 (бесплатно)
+                                    </datalist>
+                            </div>
+                            <div class="adress">
+                                <label for="street" class="street"> Улица, дом/корпус </label>
+                                <input type="text" name="street" id="street"  style="margin-top: 8px;">
+                                <label for="apartment" class="apartment"> Квартира </label>
+                                <input type="text" name="apartment" id="apartment"  style="margin-top: 8px;">
+                            </div>
+                        </div>
+                        <label for="comment" class="comment"> Комментарий курьеру </label>
+                        <input type="text" name="comment" id="comment"  style="margin-top: 8px;">
+                    </div>
+                    <button type="submit" class="go-next">
+                        Далее
+                    </button>
+                    
+                    <input type="text" class="order-input input2" id="pay" placeholder="Способ оплаты">
+                    <input type="text" class="order-input input3" id="receiver" placeholder="Получатель">
+                </div>
+
+
+                <div class="result">
+                    <h2 style="margin-bottom: 17px;">
+                        Итого
+                    </h2>
+                    <div class="tovar-summa" style="margin-bottom: 20px;">
+                        <span class="gray">
+                            <span class="count" id="resultcount">  </span> товара на сумму
+                        </span>
+                        <span class="totalprice">
+                            
+                        </span>
+                    </div>
+                    <div class="delivery" style="margin-bottom: 30px;">
+                        <span class="gray">
+                            Стоимость доставки
+                        </span>
+                        <span>
+                            бесплатно
+                        </span>
+                    </div>
+                    <div class="line" style="margin-bottom: 30px;"> </div>
+                    <div class="k-oplate">
+                        <span>
+                            К оплате
+                        </span>
+                        <span class="totalprice" style="font-size: 36px; font-weight: 700;">
+                            
+                        </span>
+                    </div>
+                    <button class="ordering">
+                        Оформить заказ
+                    </button>
+                    <div class="confirm">
+                        <input type="checkbox" name="confirm-order" id="confirm-order">
+                        <p>
+                            Подтверждая заказ, я принимаю условия <br>
+                            <a href="">пользовательского соглашения</a> 
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <script>
+
+let d = document
+
+// <==== Header after scroll ====> 
+
+let header = d.querySelector(".header")
+
+document.addEventListener("scroll", () => {
+    let fromTop = window.scrollY
+    
+    if (fromTop > 150){
+        header.classList.add("fixed-top")
+        header.classList.remove("hidden")
+    }
+    else if (fromTop < 150 && fromTop > 80) {
+        header.classList.remove("fixed-top")
+        header.classList.add("hidden")
+    }
+    else{
+        header.classList.remove("hidden")
+        header.classList.remove("fixed-top")
+    }
+})
+
+
+// <==== Seach ====>
+
+let searchBtn = d.getElementById("search-btn")
+let searchPage = d.getElementById("searchpage")
+let closeSearchBtn = d.getElementById("closesearch")
+
+searchBtn.addEventListener("click", () => {
+    searchPage.classList.add("show-search-page")
+})
+closeSearchBtn.addEventListener("click", () => {
+    searchPage.classList.remove("show-search-page")
+})
+
+
+// <==== Sign and Register ====>
+
+let signBtn = d.getElementById("sign")
+let closeSign = d.getElementById("close-sign")
+let popUp = d.querySelector(".popUp")
+
+signBtn.addEventListener("click", () => {
+    popUp.classList.add("show-popup")
+})
+closeSign.addEventListener("click", () => {
+    popUp.classList.remove("show-popup")
+})
+
+let regPopUp = d.querySelector(".reg-popUp") 
+let closeReg = d.getElementById("reg-close-sign")
+let letRegister = d.getElementById("letregister")
+let registered = d.getElementById("registered")
+
+letRegister.addEventListener("click", () => {
+    regPopUp.classList.add("show-popup")
+    popUp.classList.remove("show-popup")
+})
+closeReg.addEventListener("click", () => {
+    regPopUp.classList.remove("show-popup")
+})
+registered.addEventListener("click", () => {
+    regPopUp.classList.remove("show-popup")
+    popUp.classList.add("show-popup")
+})
+
+
+// <==== Passdowrd visibility ====>
+
+let vsblty = d.querySelector(".vsblty")
+let passInput = d.getElementById("password")
+
+let vsbltyReg = d.querySelector(".reg-vsblty")
+let passInputReg = d.getElementById("reg-password")
+
+vsblty.addEventListener("click", () => {
+    if (passInput.getAttribute("type") == "password"){
+        passInput.setAttribute("type", "text")
+        vsblty.classList.add("off")
+    }
+    else {
+        passInput.setAttribute("type", "password")
+        vsblty.classList.remove("off")
+    }
+    lockBg()
+})
+const lockBg = () => {
+    if (passInput.value !== ""){
+        passInput.classList.remove("bg-img")
+    }
+    else{   
+        passInput.classList.add("bg-img")
+    }
+}
+vsbltyReg.addEventListener("click", () => {
+    if (passInputReg.getAttribute("type") == "password"){
+        passInputReg.setAttribute("type", "text")
+        vsbltyReg.classList.add("off")
+    }
+    else {
+        passInputReg.setAttribute("type", "password")
+        vsbltyReg.classList.remove("off")
+    }
+    lockBg()
+})
+const lockBgReg = () => {
+    if (passInputReg.value !== ""){
+        passInputReg.classList.remove("bg-img")
+    }
+    else{   
+        passInputReg.classList.add("bg-img")
+    }
+}
+window.addEventListener("click", () => {
+    lockBg()
+    lockBgReg()
+})
+    
+// ============================================================
+
+
+    let orderList = d.querySelector(".y-order-body-2")
+    let count = d.querySelector("#resultcount")
+    let totalPrice = d.querySelectorAll(".totalprice")
+    let prodsInCart = []
+
+        
+
+        listCartItems = () => {
+            orderList.innerHTML = "";
+            prodsInCart.forEach( e => {
+                orderList.innerHTML += `
+                    <div class="ordered-prod">
+                        <img src="${e.image}" alt="image" style="width: 100%; margin-right: 20px">
+                        <div class="other-info">
+                            <div class="prod-info">
+                                <div class="prod-name">
+                                    ${e.name} D${e.id}
+                                </div>
+                            </div>
+                            <div class="prod-count">
+                                <button class="minus" onclick="decreaseCount(${e.id})"> <i class="fa-solid fa-minus" style="color: #C8CACB;"></i> </button>
+                                <div class="real-count"> ${e.count} </div>
+                                <button class="plus" onclick="increaseCount(${e.id})"> <i class="fa-solid fa-plus"></i> </button>
+                            </div>
+                            <div class="price">
+                                <div class="exprice">
+                                    ${e.exprice}
+                                </div>
+                                <div class="real-price">
+                                    ${e.price} ₽
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                `
+            })
+
+            let sum = 0;
+            prodsInCart.forEach(a => {
+                sum += a.count 
+            })
+            count.innerHTML = `${sum}`
+
+
+            let total = 0
+            prodsInCart.forEach(a => {
+                total += a.count*a.price
+            })
+
+            totalPrice.forEach(e=>{
+                e.innerHTML = `${total} ₽`
+            })
+        }
+
+        const fromLocal = () => {
+            let prods = JSON.parse(localStorage.getItem("cartLocal"))
+
+            prods.forEach(e=>{
+                prodsInCart.push(e)
+            })
+            listCartItems()
+        }
+        
+        fromLocal()
+
+        listCartItems()    
+
+
+    // <==== Delivery or Self ====>    
+    
+    let delivery = d.getElementById("delivery")
+    let self = d.getElementById("self")
+    let delDiv = d.querySelector(".delivery-div")
+    let selfDiv = d.querySelector(".self-div")
+
+    delivery.addEventListener("click", () => {
+        delDiv.classList.add("checked-one")
+        selfDiv.classList.remove("checked-one")
+    })
+    self.addEventListener("click", () => {
+        selfDiv.classList.add("checked-one")
+        delDiv.classList.remove("checked-one")
+    })
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+</body>

@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Новости</title>
+</head>
+<body>
+
+    <div class="header-back">
+        <div class="header">
+            <div class="topbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="icons/logo.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="info">
+                    <span class="hide-resp-768">
+                        +7 (812) 660-50-54
+                    </span>
+                    <span class="hide-resp-768">
+                        +7 (958) 111-95-03
+                    </span>
+                    <span class="hide-resp-768">
+                        Пн-вс: с 10:00 до 21:00
+                    </span>
+                    <img src="icons/search.svg" alt="search-button" class="search-button hide-resp-768" id="search-btn">
+                    <img src="icons/eye/eye=empty.svg" alt="eye" class="hide-resp-320">
+                    <img src="icons/like/like=like.svg" alt="like" class="hide-resp-320">
+                    <img src="icons/compare/compare=compare.svg" alt="compare" class="hide-resp-320">
+                    <a href="cart.html">
+                        <img src="icons/cart/cart=empty.svg" alt="cart" class="cart-btn hide-resp-768"> 
+                    </a> 
+                                   
+                </div>
+
+                <button class="sign" id="sign">
+                    Войти
+                </button>
+
+                <div class="search-page" id="searchpage">
+                    <div class="search-div">
+                        <label for="search"></label>
+                        <input type="text" class="search-inp" id="search" placeholder="Введите запрос, например «Smart balance»">
+                        <i class="fa-solid fa-xmark" id="closesearch"></i>
+                    </div>
+                </div>               
+            </div>
+
+            <div class="popUp">
+                <div class="sign-block">
+                    <div class="vxod">
+                        <span>
+                            Вход
+                        </span>
+                        <i class="fa-solid fa-xmark" id="close-sign"></i>
+                    </div>
+                    <label for="login">Эл. почта или телефон</label>
+                    <input type="text" id="login" class="loginput">
+                    
+                    <div class="password-div">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" class="loginput bg-img" placeholder="">
+                        <a href="#" class="vsblty"></a>
+                        <a href="#" class="forget"> 
+                            Забыли пароль?
+                        </a>                            
+                    </div>
+                    <div class="rem-div">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember" class="rem-label"> Запомнить меня </label>
+                    </div>
+                    <button class="enter">
+                        Войти
+                    </button>
+                    <div class="register">
+                        <a href="#" id="letregister">
+                            Зарегистрироваться
+                        </a>                            
+                    </div>
+                </div>
+            </div>
+
+            <div class="reg-popUp">
+                <div class="sign-block" style="height: 606px;">
+                    <div class="vxod">
+                        <span>
+                            Регистрация
+                        </span>
+                        <i class="fa-solid fa-xmark" id="reg-close-sign"></i>
+                    </div>
+                    <label for="name"> Имя </label>
+                    <input type="text" id="name" class="loginput">
+                    <label for="reg-login"> Эл. почта </label>
+                    <input type="email" id="reg-login" class="loginput">
+                    <label for="phone"> Номер телефона </label>
+                    <input type="tel" id="phone" class="loginput">
+                    <div class="reg-password-div">
+                        <label for="id-password">Пароль</label>
+                        <input type="password" id="reg-password" class="loginput bg-img" placeholder="" style="margin-bottom: 10px;">
+                        <a href="#" class="reg-vsblty"></a>                           
+                    </div>
+                    <p>
+                        Регистрируясь, вы соглашаетесь <br> 
+                        <a href=""> с пользовательским соглашением </a> 
+                    </p>
+                    <button class="enter" style="margin-top: 10px;">
+                        Зарегистрироваться
+                    </button>
+                    <div class="register">
+                        <a href="#" id="registered">
+                            Я уже зарегистрирован
+                        </a>                            
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+    <div class="header-2 hide-resp-768">
+        <div class="topbar-2">
+            <button class="catalog">
+                <img src="icons/menu icons/menu-icon.svg" alt="menu-icon">
+                <span>Каталог товаров</span>
+            </button>
+            <div class="menu-2">
+                <a href="#"> О компании </a>
+                <a href="#"> Акции </a>
+                <a href="#"> Рассрочка 0|0|18 </a>
+                <a href="#"> Сервис и гарантия </a>
+                <a href="#"> Опт/дропшиппинг </a>
+                <a href="#"> Контакты </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="out-block">
+        <div class="all-news">
+            <div class="first-line">
+                <span>
+                    <a href="index.html" style="color: #070C11;"> Главная</a> 
+                </span>
+                <i class="fa-solid fa-caret-right"></i>
+                <span style="color: #838688;">
+                    Новости
+                </span>
+            </div>
+            <div class="heading">
+                <h1>
+                    Новости
+                </h1>
+            </div>
+
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="all-news-page">
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="opening.html" target="blank">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>    
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="all-news-page">
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="opening.html" target="blank">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>    
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="all-news-page">
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="opening.html" target="blank">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>    
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                        </div>
+                        </div>
+                    <div class="swiper-slide">
+                        <div class="all-news-page">
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="opening.html" target="blank">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>    
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="all-news-page">
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="opening.html" target="blank">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>    
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination">
+                    <div class="swiper-button-prev"></div>
+                    <span class="swiper-pagination-bullet">1</span>
+                    <span class="swiper-pagination-bullet">2</span>
+                    <span class="swiper-pagination-bullet">3</span>
+                    <span class="swiper-pagination-bullet">4</span>
+                    <span class="swiper-pagination-bullet">5</span>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <!-- <div class="all-news-page">
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="opening.html" target="blank">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>    
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 61.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Открытие нового магазина
+                        </h1>
+                        <p>
+                            Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа анализа существующих паттернов поведения
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 64.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Работа в праздничные дни
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 62.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Идейные соображения
+                        </h1>
+                        <p>
+                            Идейные соображения высшего порядка, а также семантический разбор внешних противодействий позволяет выполнить важные задания по разработке прогресса профессионального сообщества
+
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+                <div class="block">
+                    <img src="images/newspage-images/Rectangle 63.png" alt="">
+                    <div class="text">
+                        <h1>
+                            Показатели успешности социально-экономического развития
+                        </h1>
+                        <p>
+                            Принимая во внимание показатели успешности, социально-экономическое развитие играет
+                        </p>
+                        <div class="bottom">
+                            <a href="">
+                                Подробнее
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <p>
+                                05 июня 2021
+                            </p>
+                        </div>
+
+                    </div>                    
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
+
+    <div class="footer out-block" style="margin-bottom: 0px; background-color: #EDF2F6;">
+        <div class="in-block" style="background-color: #EDF2F6;">
+            <div class="all-info">
+                <div class="section sect-1">
+                    <ul>
+                        <li>
+                            <img src="icons/logo.svg" alt="logo">
+                        </li>
+                        <li>
+                            +7 (958) 111-95-03
+                        </li>
+                        <li>
+                            +7 (812) 660-50-54
+                        </li>
+                        <li>
+                            Пн-вс: с 10:00 до 21:00
+                        </li>
+                        <li>
+                            Проспект Стачек 67 к.5 <br>
+                            Лиговский проспект 205 <br>
+                            Гражданский проспект, 116 к.5
+                        </li>
+                    </ul>  
+                </div>
+                <div class="section sect-2">
+                    <ul>
+                        <li>
+                            Для клиента
+                        </li>
+                        <li>
+                            <a href="#"> Как купить </a> 
+                        </li>
+                        <li>
+                            <a href="#"> Доставка и оплата </a>
+                        </li>
+                        <li>
+                            <a href="#"> Кредит </a>
+                        </li>
+                        <li>
+                            <a href="#"> Политика конфиденциальности </a>
+                        </li>
+                        <li>
+                            <a href="#"> Вопросы и ответы (F.A.Q.) </a>
+                        </li>
+                        <li>
+                            <a href="#"> Сервис и гарантия </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section sect-3">
+                    <ul>
+                        <li>
+                            О магазине
+                        </li>
+                        <li>
+                            <a href="#"> Отзывы </a> 
+                        </li>
+                        <li>
+                            <a href="#"> Наши преимущества </a>
+                        </li>
+                        <li>
+                            <a href="#"> История компании </a>
+                        </li>
+                        <li>
+                            <a href="#"> Сотрудничество </a>
+                        </li>
+                        <li>
+                            <a href="#"> Партнёрская программа </a>
+                        </li>
+                        <li>
+                            <a href="#"> Вакансии </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section sect-4">
+                    <ul>
+                        <li>
+                            Сотрудничество
+                        </li>
+                        <li>
+                            <a href="#"> Оптом </a> 
+                        </li>
+                        <li>
+                            <a href="#"> Дропшиппинг </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-bar">
+                <span>
+                    SmartТехника © 2021 Все права защищены
+                </span>
+                <div class="socials">
+                    <a href="#"> <img src="icons/socials/twitter.svg" alt=""> </a> 
+                    <a href="#"> <img src="icons/socials/facebook.svg" alt=""> </a> 
+                    <a href="#"> <img src="icons/socials/vk.svg" alt=""> </a> 
+                    <a href="#"> <img src="icons/socials/instagram.svg" alt=""> </a>
+                </div>
+                <span style="font-size: 12px;">
+                    Разработка: websl.ru
+                </span>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+
+let d = document
+let searchBtn = d.getElementById("search-btn")
+let searchPage = d.getElementById("searchpage")
+let closeSearchBtn = d.getElementById("closesearch")
+
+searchBtn.addEventListener("click", () => {
+    searchPage.classList.add("show-search-page")
+})
+closeSearchBtn.addEventListener("click", () => {
+    searchPage.classList.remove("show-search-page")
+})
+
+
+// <==== Sign and Register ====>
+
+let signBtn = d.getElementById("sign")
+let closeSign = d.getElementById("close-sign")
+let popUp = d.querySelector(".popUp")
+
+signBtn.addEventListener("click", () => {
+    popUp.classList.add("show-popup")
+})
+closeSign.addEventListener("click", () => {
+    popUp.classList.remove("show-popup")
+})
+
+let regPopUp = d.querySelector(".reg-popUp") 
+let closeReg = d.getElementById("reg-close-sign")
+let letRegister = d.getElementById("letregister")
+let registered = d.getElementById("registered")
+
+letRegister.addEventListener("click", () => {
+    regPopUp.classList.add("show-popup")
+    popUp.classList.remove("show-popup")
+})
+closeReg.addEventListener("click", () => {
+    regPopUp.classList.remove("show-popup")
+})
+registered.addEventListener("click", () => {
+    regPopUp.classList.remove("show-popup")
+    popUp.classList.add("show-popup")
+})
+
+    </script>        
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+        });
+      </script>
+      <!-- <script src="main.js"></script> -->
+      
+</body>
+</html>
